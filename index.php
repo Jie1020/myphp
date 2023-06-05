@@ -53,7 +53,7 @@
             </ul>
         </section>
 
-        <br>
+        
         <hr>
         
         <section>
@@ -88,10 +88,69 @@
             if(1==1){
                 ?>
             <p> This should also work </p>
+
             <?php    
             }?>
-            
+        </section>
+        
+        <section>
+            <h2> Scalar data type</h2>
+            <strong> Data types</strong>
+            <strong>NOTE:</NOTE><p>we have atleast  12 primitive data types </p>
 
+            <h3>Scalar Data Types</h3>
+            <ul>
+                <li>String</li>
+                <li>Integer</li>
+                <li>Floats</li>
+                <li>Boolean</li>
+            </ul>
+
+            <h3>Compound</h3>
+            <ul>
+                <li>Array</li>
+                <li>Object</li>
+                <li>Caliable</li>
+                <li>Iterable</li>
+            </ul>
+
+            <h2>Special</h2>
+            <ul>
+                <li>Resource</li>
+                <li>Null</li>
+            </ul>
+
+            <h2>Pseudo-Types</h2>
+            
+        </section>
+
+        <section>
+            <h2>String data types</h2>
+                <ul>
+                    <li>Single qoutes</li>
+                    <li>Double qoutes</li>
+                </ul>
+                <p>It is important to take note of cancelling out double qoutes in sie of our double qoutes</p>
+            <?php
+                echo 'I\'m learning how to work with strings';
+            ?>
+
+                <hr>
+
+            <h2>INTEGERS</h2>
+
+            <?php
+            echo 20 . " This is an integer";
+
+            echo "<br>";
+            if("10" == 10){
+                echo "This  is not the same data type";
+            }
+            else{
+                echo "This is the same data type";
+            }
+            ?>
+        </section>
 
     <script type="text/babel">
       function Hello() {
