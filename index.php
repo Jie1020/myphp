@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our 1st php script</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-</head>
 <body>
-    <header>
-        <div class="header">
-            <?php
-            echo "my first php";
-            ?>
-
-        </div>
-    </header>
+    
+    <main>
     <div id="mydiv"></div>
     <br>
 
@@ -274,13 +256,72 @@
                 }
                     echo "<br>";
 
-                $array = ["Benjie", "28", "Male"];
+                $array = ["Benjie", "28", "Male","zzz","ddd","ccc"];
 
                 foreach($array as $value){
-                    echo $value;
+                    if($value === "Male"){
+                        echo $value." is found";
+                    }
+                    echo "<br>";
+                }
+                
+                //Assiotitive Arrays
+
+                $persons = [
+                    "name" => "Benjie",
+                    "age" => 28,
+                    "gender" => "Male",
+                    "address" => "zzz"
+                ];
+
+                foreach($persons as $key => $value){
+                    echo $key. ": ".$value;
                     echo "<br>";
                 }
             ?>
+
+
+            <h2>Includes and require<h2>
+                <?php
+                
+
+                include 'includes/2ndpage.php';
+                include_once 'includes/2ndpage.php';
+                require 'test.php';
+                require_once 'test.php';
+            
+            
+                    echo $apple;
+                ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script type="text/babel">
       function Hello() {
@@ -291,6 +332,9 @@
       const root = ReactDOM.createRoot(container);
       root.render(<Hello />)
     </script>
-
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
+
 </html>

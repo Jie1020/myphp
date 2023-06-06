@@ -5,11 +5,16 @@
 }
 
 body{
-    background-color: rgb(14, 222, 236);
-    margin: 2%;
-    padding: 2rem;
+    background-color: lightblue;
+    text-align: center;
+
 }
 
-.header {
+/* .header {
     height: 50vh;
+} */
+footer{
+    background-color: black;
+    color: aliceblue;
+    height: 5vh;
 }
