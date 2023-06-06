@@ -10,8 +10,14 @@ function calculateFunc($num1, $operations, $num2){
             $ans = $num1 - $num2;
             break;
         default:
-        $result = "Output Error";
+        $ans = "Output Error";
         break;
     }
     return $ans;
 }
+
+$num1 = $_GET["num1"];
+$operations = $_GET["operations"];
+$num2 = $_GET["num2"];
+
+echo "Calculated Value: ".calculateFunc($num1, $operations, $num2);

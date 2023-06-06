@@ -62,10 +62,12 @@
             <div class="form">
                 <form action="funcCalc.php" method="get">
                     <input type="text" name="num1" placeholder= "Number 1">
-                    <select name="Operations" id="">
-                        <label for="operations"></label>
+                    <select name="operations">
+                        <label for="operations">Arithmetic Operations</label>
+                        <option value="add">add</option>
+                        <option value="subtract">subtract</option>
                     </select>
-                    <input type="text" name="num1" placeholder= "Number 2">
+                    <input type="text" name="num2" placeholder= "Number 2">
                     <button type="submit">Calculate</button>
                 </form>
 
