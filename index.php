@@ -163,6 +163,21 @@
             }
 
             ?>
+
+            <hr>
+            <h2>Declaring Variable</h2>
+            
+            <?php
+                echo "<h3>Rules in declaring variables</h3>";
+                echo "<ul>
+                    <li>Don't start your variable name with a number</li>
+                    <li>A variable name can start with a letter and an underscore</li>
+                    <li>Cannot start with a number</li>
+                    <li>case sensitive</li>
+                </ul>"
+            ?>
+
+
     <script type="text/babel">
       function Hello() {
         return <h1>Hello World!</h1>;
