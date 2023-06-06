@@ -67,8 +67,11 @@
             </P>
             <p>
                 <?php
-                    echo "hello word using echo";
+                    echo "hello world using echo";
                 ?>
+                <?php
+                    print "hello world using print";
+                    ?>
             </p>
         </section>
 
@@ -146,12 +149,20 @@
             if("10" == 10){
                 echo "This  is not the same data type";
             }
-            else{
-                echo "This is the same data type";
-            }
             ?>
+            
         </section>
+        <section>
+            <h2>Boolean</h2>
 
+            <?php
+            $a = true;
+
+            if($a === true){
+                echo "variable a is true";
+            }
+
+            ?>
     <script type="text/babel">
       function Hello() {
         return <h1>Hello World!</h1>;
