@@ -177,6 +177,110 @@
                 </ul>"
             ?>
 
+            <hr>
+            <?php
+            print "<h2>Coding Challenge</h2>";
+            //Declare a variable and assign a value of string data type
+            //Declare a variable and assign a number data type
+            //Declare a variable and assign a boolean data type
+            //Declare a variable and assign a float data type
+            
+            $strng = "String";
+            $num = 20;
+            $bool = false;
+            $flot = 20.00;
+
+            echo $strng ." is the declared variable";
+            echo $num;
+            echo "<br>";
+            echo "this value is ".$bool;
+            ?>
+            <hr>
+            <h2>Operators</h2>
+            <ul>
+                <li>Arithmetic Operator</li>
+                <li>Assignment Operator</li>
+                
+            </ul>
+
+            <hr>
+            <?php
+                $num1 = 1;
+                $num2 = 2;
+                $sum;
+                $product;
+                $diff;
+                $qoutient;
+                echo "<h3>Arithmetic Operator</h3>";
+                $sum = $num1 + $num2;
+                echo $num1."+".$num2."=".$sum;
+                echo "<br>";
+
+                $product = $num1 * $num2;
+                echo $num1."*".$num2."=".$product;
+                echo "<br>";
+
+                $diff = $num1 - $num2;
+                echo $num1."-".$num2."=".$diff;
+
+                echo "<br>";
+                $qoutient = $num1 / $num2;
+                echo $num1."/".$num2."=".$qoutient;
+                
+            ?>
+            <hr>
+
+            <?php
+                echo "<h3>Assignment Operator</h3>";
+
+                $num1 += $num2;
+                echo $num1;
+                //num1 = num1 + num2
+                echo "<br>";
+
+                $num1 = $num1 + $num2;
+                echo $num1;
+                
+            ?>
+
+            <?php
+            echo '<h2> Comparison Operator</h2>';
+                $num1 == $num2;
+                $num1 === $num2;
+                $num1 !== $num2;
+                $num1 < $num2;
+                $num1 > $num2;
+                $num1 <= $num2;
+                $num1 >= $num2;
+            ?>
+
+            <hr>
+            <?php
+                echo "<h2> loops </h2>";
+                
+                $a = 0;
+                $b = 5;
+
+                while($a < $b){
+                    $a++;
+                    echo "while loop number ".$a;
+                    echo "<br>";
+                }
+                    echo "<br>";
+
+                for($i=1; $i<=5 ;$i++){
+                    echo "for loop # ".$i;
+                    echo "<br>";
+                }
+                    echo "<br>";
+
+                $array = ["Benjie", "28", "Male"];
+
+                foreach($array as $value){
+                    echo $value;
+                    echo "<br>";
+                }
+            ?>
 
     <script type="text/babel">
       function Hello() {
